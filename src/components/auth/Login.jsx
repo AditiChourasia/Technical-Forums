@@ -20,7 +20,6 @@ class Login extends React.Component {
     e.preventDefault();
     const { pwd, email } = this.state;
 
-    const newuser = { email, password: pwd };
     this.props.login(email, pwd);
   };
 

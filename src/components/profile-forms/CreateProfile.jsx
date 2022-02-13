@@ -1,9 +1,9 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState } from "react";
 import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, FormGroup, Input, Label } from "reactstrap";
+import { Button, FormGroup, Input } from "reactstrap";
 import Select from "react-select";
 import { createProfile } from "../../actions/profile";
 

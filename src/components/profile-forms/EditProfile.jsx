@@ -1,9 +1,9 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import { Navigate, useNavigate, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, FormGroup, Input, Label } from "reactstrap";
+import { Button, FormGroup, Input } from "reactstrap";
 import Select from "react-select";
 import { createProfile } from "../../actions/profile";
 import { getCurrentProfile } from "./../../actions/profile";
@@ -35,7 +35,7 @@ const EditProfile = ({
     if (auth.isAuthenticated && !auth.loading) {
       getCurrentUserProfile();
     }
-  }, [auth.isAuthenticated]);
+  }, [auth.isAuthenticated, auth.loading, getCurrentUserProfile]);
 
   useEffect(() => {
     if (profile) {
@@ -73,9 +73,8 @@ const EditProfile = ({
             ? ""
             : profile.social.instagram,
       });
-      console.log(formData);
     }
-  }, [profile]);
+  }, [profile, auth.loading]);
 
   const history = useNavigate();
 

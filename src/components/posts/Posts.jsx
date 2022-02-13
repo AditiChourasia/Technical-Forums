@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import { PropTypes } from "prop-types";
 import { getPosts } from "./../../actions/post";
 import { TailSpin } from "react-loader-spinner";

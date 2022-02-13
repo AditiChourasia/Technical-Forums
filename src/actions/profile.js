@@ -272,7 +272,7 @@ export const deleteAccount = (id) => async (dispatch) => {
     )
   ) {
     try {
-      const res = await axios.delete(BASE_URL + `/api/profile`);
+      await axios.delete(BASE_URL + `/api/profile`);
 
       dispatch({
         type: CLEAR_PROFILE,

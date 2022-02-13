@@ -18,7 +18,7 @@ const Profile = ({
   const { id } = useParams();
   useEffect(() => {
     getProfileOfUser(id);
-  }, []);
+  }, [getProfileOfUser, id]);
 
   if (!auth.isAuthenticated && !auth.loading) return <Navigate to="/login" />;
 

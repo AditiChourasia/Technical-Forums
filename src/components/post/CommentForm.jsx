@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import { addComment } from "./../../actions/post";
 import { connect } from "react-redux";
 import { Form } from "reactstrap";

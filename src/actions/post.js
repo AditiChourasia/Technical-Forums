@@ -76,7 +76,7 @@ export const removeLike = (postId) => async (dispatch) => {
 // Delete Post
 export const deletePost = (postId) => async (dispatch) => {
   try {
-    const res = await axios.delete(`${BASE_URL}/api/posts/${postId}`);
+    await axios.delete(`${BASE_URL}/api/posts/${postId}`);
 
     dispatch({
       type: DELETE_POST,
@@ -181,12 +181,8 @@ export const addComment = (postId, formData) => async (dispatch) => {
 
 // Delete Comment
 export const deleteComment = (postId, commentId) => async (dispatch) => {
-  const config = {
-    "Content-Type": "application/json",
-  };
-
   try {
-    const res = await axios.delete(
+    await axios.delete(
       `${BASE_URL}/api/posts/uncomment/${postId}/${commentId}`
     );
 

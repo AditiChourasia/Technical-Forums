@@ -5,7 +5,6 @@ import { PropTypes } from "prop-types";
 import { NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Button } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CommentItem = ({
   postId,

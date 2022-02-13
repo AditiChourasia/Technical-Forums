@@ -1,10 +1,9 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import { PropTypes } from "prop-types";
 import { getPost } from "./../../actions/post";
 import { TailSpin } from "react-loader-spinner";
 import { connect } from "react-redux";
 import { Navigate, NavLink, useParams } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PostItem from "../posts/PostItem";
 import CommentForm from "./CommentForm";
 import CommentItem from "./CommentItem";
@@ -14,7 +13,7 @@ const Post = ({ getPost: getCurrentPost, post, auth }) => {
 
   useEffect(() => {
     getCurrentPost(id);
-  }, [getCurrentPost]);
+  }, [getCurrentPost, id]);
 
   if (!auth.isAuthenticated && !auth.loading) return <Navigate to="/login" />;
 

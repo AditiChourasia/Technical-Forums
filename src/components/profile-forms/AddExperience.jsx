@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
 import { addExperience } from "./../../actions/profile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FormGroup, Input, Button, Label } from "reactstrap";
+import { Input, Button, Label } from "reactstrap";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const AddExperience = ({ addExperience: addExp }) => {
@@ -90,9 +90,8 @@ const AddExperience = ({ addExperience: addExp }) => {
             <Input
               type="checkbox"
               name="current"
-              value=""
               style={{ fontSize: "1rem" }}
-              value={current}
+              value={formData.current}
               onChange={() => {
                 setFormData({ ...formData, to: "", current: !current });
               }}

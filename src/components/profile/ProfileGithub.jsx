@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import { TailSpin } from "react-loader-spinner";
 import { getGithubRepos } from "./../../actions/profile";
 import { PropTypes } from "prop-types";
@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 const ProfileGithub = ({ getGithubRepos: getrepos, username, repos }) => {
   useEffect(() => {
     getrepos(username);
-  }, [username]);
+  }, [getrepos, username]);
 
   if (!repos)
     return (

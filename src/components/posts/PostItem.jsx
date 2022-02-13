@@ -1,6 +1,5 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment } from "react";
 import Moment from "react-moment";
-import { TailSpin } from "react-loader-spinner";
 import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

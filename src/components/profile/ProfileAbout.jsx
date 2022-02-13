@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
-import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
 
 const ProfileAbout = ({ profile }) => {

@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
 import { addEducation } from "./../../actions/profile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FormGroup, Input, Button, Label } from "reactstrap";
+import { Input, Button, Label } from "reactstrap";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const AddEducation = ({ addEducation: addEdu }) => {
@@ -91,7 +91,6 @@ const AddEducation = ({ addEducation: addEdu }) => {
             <Input
               type="checkbox"
               name="current"
-              value=""
               style={{ fontSize: "1rem" }}
               value={current}
               onChange={() => {
