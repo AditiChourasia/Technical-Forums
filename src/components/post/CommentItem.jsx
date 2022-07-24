@@ -32,7 +32,7 @@ const CommentItem = ({
       <div>
         <p className="my-1">{text}</p>
         <p className="post-date">
-          Posted on
+          <span className="mr-1">Posted on </span>
           <Moment format="DD/MM/YYYY">{date}</Moment>
         </p>
 

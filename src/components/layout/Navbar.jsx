@@ -48,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <NavLink to="/">
-          <FontAwesomeIcon icon={["fas", "code"]} /> Technical Forums
+          <FontAwesomeIcon icon={["fas", "code"]} /> RGPV Student Forums
         </NavLink>
       </h1>
       {!loading && (

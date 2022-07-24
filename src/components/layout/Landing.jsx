@@ -9,14 +9,16 @@ const Landing = ({ auth }) => {
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
-          <h1 className="x-large">Technical Forums</h1>
+          <h1 className="x-large">RGPV Student Forums</h1>
           <p className="lead">
-            Create a techie profile, ask questions and get help from other
-            techies. Get inspired by projects and achievements of other techies.
+            Create a profile, ask questions and get help from other technical
+            enthusiasts.
+          </p>
+          <p className="lead">
             Education, experience, other social media links all at one profile.
           </p>
           <div className="buttons">
-            <NavLink to="/register" className="btn btn-primary">
+            <NavLink to="/register" className="btn btn-info">
               Sign Up
             </NavLink>
             <NavLink to="/login" className="btn btn-light">
