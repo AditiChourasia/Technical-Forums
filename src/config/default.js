@@ -1,1 +1,1 @@
-export const BASE_URL = "https://technicalforums.herokuapp.com";
+export const BASE_URL = "https://rgpv-forums-backend.onrender.com";
